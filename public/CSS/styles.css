@@ -196,11 +196,16 @@ body p{
 #down{
     visibility:hidden;
     position:absolute;
-    bottom:20px;
+    bottom:30px;
     left:50%;
     transform:translateX(-50%);
 }
-#down a{
+#up{
+    display:flex;
+    justify-content:center;
+    padding-bottom:50px;
+}
+#down a, #up a{
     display:flex;
     justify-content:center;
     align-items:center;
@@ -209,6 +214,15 @@ body p{
     background-color:#33413b;
     color:#eee;
     border-radius:50%;
+    animation-name:move-arrow;
+    animation-iteration-count:infinite;
+    animation-duration:3s;
+    animation-timing-function:ease-in-out;
+}
+@keyframes move-arrow{
+    0%{transform:translateY(10px)}
+    50%{transform:translateY(-10px)}
+    100%{transform:translateY(10px)}
 }
 /* Navbar */
 .logo{
@@ -225,7 +239,8 @@ body p{
     display:block;
     height: 40px;
     width: 120px;
-    text-align: center;
+    margin:auto;
+    text-align: center!important;
     border-radius: 3px;
     color: #31344b;
     font-weight: bold;
@@ -348,18 +363,17 @@ body p{
     justify-content: center;
     align-items: center;
     background-color:#e0e5ec;
-    width: 450px;
-    height: 950px;
+    width: 350px;
+    height: 650px;
     border-radius: 8px;
     box-shadow: inset 8px 8px 8px #a3b1c6, inset -0.5em -0.5em 0.5em  #fff;
 }
 .my-img2 img{
-    width: 400px;
-    height: 900px;
+    width: 300px;
+    height: 600px;
     border-radius: 10px;
 } 
 .portfolio{
-    padding: 2% !important;
     letter-spacing: 0.1rem;
     line-height: 1.5;
 }
@@ -372,57 +386,64 @@ body p{
     border:0;
     border-top: 5px dotted #31344b;
 }
-.portfolio p{
-    padding:  4% 0;
+.skill{
+   background-color: #e0e5ec;
+   letter-spacing: 0.1rem;
+   padding: 2% 4%;
+   border-radius: 10px; 
+   position:relative;
 }
-.portfolio i{
-    margin-bottom: 30px;
-    color: #31344b;
-    display: block;
-    height: 130px;
-    width: 130px;
-    border-radius: 50%;
-    box-shadow: 4px 4px 8px #a3b1c6, -0.25em -0.25em 0.5em  #fff;
-    text-align: center;
-    padding-top: 30px;
-    transition: 0.2s;
-    background-color:#e0e5ec;
+.skill::before {
+  content: '';
+  width: 120px;
+  height: 50px;
+  border-left: 1px solid tomato;
+  border-top: 1px solid tomato;
+  border-radius:10px 0 0 0;
+  background:none;
+  position:absolute;
+  top:0;
+  left:0;
 }
-.portfolio i:hover{
+.skill::after {
+  content: '';
+  width: 120px;
+  height: 50px;
+  border-right: 1px solid tomato;
+  border-bottom: 1px solid tomato;
+  border-radius:0 0 10px 0;
+  background:none;
+  position:absolute;
+  bottom:0;
+  right:0;
+}
+.bar{
+    margin-top:15px;
+    height:8px;
+    border-radius:4px;
     box-shadow: inset 4px 4px 8px #a3b1c6, inset -0.25em -0.25em 0.5em  #fff;
-    transform: rotate(360deg);
+    box-shadow: 4px 4px 8px #a3b1c6, -0.25em -0.25em 0.5em  #fff ;
 }
-.portfolio hr{
-    width: 50%;
-    margin-left: 0;
-    border: 0;
-    border-top: 0.1px solid #181810;
+.upto{
+    background-color:#1a8bdb;
+    height:100%;
+    border-radius:4px;
+    background: linear-gradient(145deg, #5bc6ff, #4da7db);
 }
-.web-design{
-    padding: 8% 0%;
+.js{
+    width:90%;
 }
-.photography{ 
-    padding: 10% 0%;
+.html{
+    width:90%;
 }
-.portfolio-button{
-    display: block;
-    height: 50px;
-    width: 150px;
-    color: #31344b;
-    transition: 0.2s;
-    text-align: center;
-    text-transform: uppercase;
-    font-size: 1.1rem;
-    box-shadow: 4px 4px 8px #a3b1c6, -0.25em -0.25em 0.5em  #fff !important;
-    border-radius: 7px;
-    padding: 10px 5px 0;
-    background-color:#e0e5ec;
-
+.c{
+    width:75%;
 }
-.portfolio-button:hover{
-    text-decoration: none;
-    color: #31344b;
-    box-shadow: inset 4px 4px 8px #a3b1c6, inset -0.25em -0.25em 0.5em  #fff !important;
+.mern{
+    width:80%;
+}
+.bootstrap{
+    width:90%;
 }
 
 /* Properties */
@@ -456,9 +477,9 @@ body p{
     height:250px;
     width:100%;
     background-color:#000;
-    overflow-y:scroll;
+    overflow:auto;
 }
-.property-element-inner::-webkit-scrollbar{
+.property-element-inner div::-webkit-scrollbar{
     display:none;
 }
 .property-element-inner img{
@@ -469,16 +490,22 @@ body p{
 }
 #properties a{
     margin: 15px auto;
-    color: #31344b;
     display: flex;
+    color:#eee;
+    background-color:tomato;
     align-items:center;
     justify-content:center;
-    height: 40px;
-    width: 40px;
+    height: 50px;
+    width: 50px;
     border-radius: 50%;
     transition: 0.2s;
-    box-shadow: inset 4px 4px 8px #a3b1c6, inset -0.25em -0.25em 0.5em  #fff;
     text-decoration:none;
+    box-shadow: 4px 4px 8px #a3b1c6;
+}
+#properties a:hover{
+    color: #31344b;
+    background-color:#e0e5ec;
+    box-shadow: inset 4px 4px 8px #a3b1c6, inset -0.25em -0.25em 0.5em  #fff;
 }
 
 /* Contact */
@@ -585,6 +612,9 @@ body p{
     font-size: 1rem;
     line-height: 1.5;
 }
+.social-media{
+    margin-bottom:40px;
+}
 .introduction-div button{
     margin-top:40px;
 }
@@ -609,21 +639,11 @@ body p{
     border: 0;
     border-top:5px dotted #a79f76;
 }
-.portfolio i{
-    font-size: 4rem;
-    margin: 1% auto;
+.skill{
+    padding:4% 6%;
 }
-.portfolio p{
-    font-size: 1rem;
-}
-.portfolio hr{
-    margin: auto;
-}
-.web-design, .photography{
-    text-align: center;
-}
-.web-design h2, .photography h2{
-    font-size: 1.5rem;
+.skill h5{
+    font-size:1rem;
 }
 .my-img2{
    width: 300px;
