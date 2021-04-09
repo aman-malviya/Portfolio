@@ -2,16 +2,7 @@ $(window).on("load", function () {
     $(".preloader").fadeOut(1000);
     $(".non-preloader-body").fadeIn(1000);
 });
-$(document).ready(function () {
-    // SideNavToggle
-    $(".side-contact-toggle").on("click", function () {
-        $(".sideContactBar").show("slow", function () {
-            $(".side-contact-close-btn").on("click", function () {
-                $(".sideContactBar").hide("slow");
-            });
-        });
-    });
-    
+$(document).ready(function () {    
     // Scrolling-buttons
     $(".about-scroll").on("click", function () {
         $('html, body').animate({

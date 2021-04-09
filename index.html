@@ -25,44 +25,25 @@
 </head>
 
 <body>
-    <!-- <div class="sideContactBar">
-        <div class="sideContactForm">
-            <form action="success.html" method="POST" data-netlify="true">
-                <div class="form-group">
-                    <label>
-                        Tell Me Your Name
-                    </label>
-                    <input name="clientName" class="form-control form-input" placeholder="Your Name here" type="text"
-                        required autofocus>
-                </div>
-                <div class="form-group">
-                    <label>
-                        Enter Your E-mail
-                    </label>
-                    <input name="clientEmail" class="form-control form-input" placeholder="Your E-mail here"
-                        type="email" required>
-                </div>
-                <label>Your Message</label>
-                <textarea placeholder="Your Message" class="form-control form-input" name="clientMessage" id=""
-                    cols="30" rows="2" required></textarea>
-                <button class="send-msg-button" type="submit">Send A Message</button>
-            </form>
-            <a class="side-contact-close-btn"><i class="far fa-times-circle fa-2x"></i></a>
-
-        </div>
-    </div> -->
-
     <div class="preloader">
         <div class="preloader-inner">
-            <img height="40px" src="public/Assets/719.gif" alt="">
-            <p><strong><i> Loading...</i></strong></p>
+            <div class="loading">
+                <img height="40px" src="public/Assets/pulse.gif" alt="">
+            </div>
+            <div class="loading">
+                <p><i>Loading...</i></p>
+            </div>
         </div>
 
     </div>
 
     <div class="non-preloader-body">
         <nav class="navbar navbar-expand-lg">
-            <a href="#"><img class="logo" src="public/Assets/Akm.png" alt=""></a>
+            <a href="#">
+                <video preload="auto" width="100px" height="50px" autoplay id="vid" width="400">
+                    <source src="public/Assets/video.mp4" type="video/mp4">
+                </video>
+            </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="#navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><i
                     class="fas fa-bars"></i></button>
@@ -108,7 +89,7 @@
                                     <span class='console-underscore' id='console'>_</span>
                                 </span>   
                             </h1></div>
-                            <button><a href="#contact" class="contact-scroll">Get in Touch with Me</a></button>
+                            <button><a href="#contact" class="contact-scroll"><i style="color:tomato; margin-right:10px;" class="fas fa-file"></i> My Resume</a></button>
                         </div>
                     </div>
                     <div class="carousel-item">
@@ -137,6 +118,9 @@
             </div>
             <br />
             <br />
+            <div id="down">
+                <a href="#about" class="about-scroll"><i class="fas fa-arrow-down"></i></a>
+            <div>
         </section>
         <section id="About-me">
             <br />
@@ -150,20 +134,20 @@
                 <div class="col-lg-7 about-me-text">
                     <h2>ABOUT ME</h2>
                     <hr>
-                    <div class="hr"></div>
+                    <br>
                     <p>
                         I'm Aman Malviya. I'm an ECE Undergraduate at National Institute of Technology, Bhopal. I am a full stack developer with holistic knowledge of HTML5, CSS3, ReactJS and NodeJS.
                         <br><br>
                         I'm passionate towards what I do and my approach towards work revolves around developing long term contacts with work colleagues and clients.
                         <br><br>Looking forward to design something creative for you.<br><br>
-                        <a href="#contact" class="about-button contact-scroll">CONTACT ME</a>
+                        <a href="#contact" class="about-button contact-scroll">LET'S CONNECT</a>
                     </p>
                 </div>
             </div>
             </section>
             <section id="portfolio">
             <h1 class="portfolio-heading">
-             Projects
+                What I do
                 <hr class="portfolio-line">
             </h1>
 
@@ -201,40 +185,25 @@
 
 
         <section id="properties">
-            <h2>What I do</h2>
+            <h2>Projects</h2>
             <hr>
             <div class="row no-gutters">
-                <div class="col-lg-4 property-element">
+                <div class="col-lg-6 property-element">
                     <div class="property-element-inner">
-                        <h3>RESEARCH</h3>
-                        <i class="fas fa-file-search fa-4x"></i>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. At, dignissimos assumenda saepe
-                            libero
-                            incidunt nemo, vel facere doloribus reiciendis voluptatum.</p>
+                        <div><img src="public/Assets/blog.jpeg" /></div>
+                        <br>
+                        <h4>A Blog Website</h4>
+                        <a href=""><i class="fas fa-link"></i></a>
                     </div>
                 </div>
-                <div class="col-lg-4 property-element">
+                <div class="col-lg-6 property-element">
                     <div class="property-element-inner">
-                        <h3>BUILD</h3>
-                        <i class="fas fa-cogs fa-4x"></i>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. At, dignissimos assumenda saepe
-                            libero
-                            incidunt nemo, vel
-                            facere doloribus reiciendis voluptatum.
-                        </p>
+                        <div><img src="public/Assets/quiz.jpeg" /></div>
+                        <br>
+                        <h4>Quizzers' Hub</h4>
+                        <a href=""><i class="fas fa-link"></i></a>
                     </div>
 
-                </div>
-                <div class="col-lg-4 property-element">
-                    <div class="property-element-inner">
-                        <h3>OPTIMIZE</h3>
-                        <i class="fal fa-chart-line fa-4x"></i>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. At, dignissimos assumenda saepe
-                            libero
-                            incidunt nemo, vel
-                            facere doloribus reiciendis voluptatum.
-                        </p>
-                    </div>
                 </div>
             </div>
         </section>
@@ -248,96 +217,42 @@
                 <div class="col-lg-6 form-side">
                     <h1>Got a project in mind?<br>Drop me a line! Let's make something great together.</h1>
                 </div>
-                <!-- <div class="col-lg-6 form-side2">
-                    <form action="success.html" method="POST" data-netlify="true">
-                        <div class="form-group">
-                            <label for="name">Tell me your Name</label>
-                            <input type="text" name="clientName" class="form-control form-input" placeholder="Your name"
-                                required autofocus>
-                        </div>
-                        <div class="form-group">
-                            <label for="exampleInputEmail1">Email address</label>
-                            <input type="email" name="clientEmail" class="form-control form-input"
-                                aria-describedby="emailHelp" placeholder="Enter email" required>
-                            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
-                                else.</small>
-                        </div>
-                        <div class="form-group">
-                            <label>Your Message</label>
-                            <br>
-                            <textarea class="form-control  form-input" name="clientMessage" id="" cols="30" rows="5"
-                                placeholder="Your Message" required></textarea>
-                            <button type="submit" class="contact-button send-msg-button">Send a message</button>
-                    </form>
-                </div> -->
                 <div class="col-lg-6 form-side2">
                     <br>
-                    <div style="display:grid; padding:20px; grid-template-columns:10% 90%">
-                        <div><i style="color:tomato;" class="fas fa-envelope-open-text"></i></div>
-                        <div> 
+                    <div class="contact-info">
+                        <div><div class="icon d-flex justify-content-center align-items-center"><i class="fas fa-envelope-open-text fa-1.5x"></i></div></div>
+                        <div style="padding-left:40px;"> 
                             <p style="font-weight:bold;">Email</p>
-                            <p>amanmalviya14032000@gmail.com</p>
+                            <p style="margin-bottom:0; font-size:1rem; overflow-wrap:break-word">amanmalviya14032000@gmail.com</p>
                         </div>
                     </div>
-                    <br><br>
-                    <div style="display:grid; padding:20px; grid-template-columns:10% 90%">
-                        <div><i style="color:#1a8bdb;" class="fas fa-phone-alt"></i></div>
-                        <div> 
-                            <p style="font-weight:bold;">Contact Number</p>
-                            <p>+91 8269366460</p>
+                    <br>
+                    <div class="contact-info">
+                        <div><div class="icon d-flex justify-content-center align-items-center"><i class="fas fa-phone-alt fa-1.5x"></i></div></div>
+                        <div style="padding-left:40px;"> 
+                            <p style="font-weight:bold;">Phone</p>
+                            <p style="margin-bottom:0; font-size:1rem;">+91 8269366460</p>
                         </div>
                     </div>
                 </div>
             </div>
+            <br>
         </section>
         
         <section id="contact-details">
-        <div class=background-shade-2>
-            <div class="row no-gutters">
-                <div class="col-lg-6 footer-section-1">
-                    <h5>About-me</h5>
-                    <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et voluptatum nobis quo
-                        dolorem recusandae asperiores iste! Sit sunt aperiam impedit architecto vel unde voluptate,
-                        magnam
-                        nam
-                        minus, quasi harum incidunt?</p>
-                    <br><img src="Assets/Akm2.png" height="80px" alt="">
-                </div>
-                <div class="col-lg-3  footer-section-2">
-                    <h5>Navigation</h5>
-                    <ul class="nav-bottom">
-                        <li class="nav-item">
-                            <a class="nav-bottom-link hvr-underline-from-center home-scroll" href="#title">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-bottom-link hvr-underline-from-center about-scroll" href="#About-me">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-bottom-link  hvr-underline-from-center portfolio-scroll"
-                                href="#portfolio">Portfolio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-bottom-link hvr-underline-from-center contact-scroll"
-                                href="#contact">Contact</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-lg-3 footer-section-3">
-                    <h5>Social-media</h5>
-                    <ul style="padding:0;margin:0;" class="social-media">
-                        <li><a style="margin-left:0;" target="_blank" href="https://www.facebook.com/aman.malviya.9699523" class="social-media-link"><i
-                                    class="fab fa-facebook-f"></i></a></li>
-                        <li><a style="margin-left:0;" target="_blank" href="https://www.instagram.com/amalviya_0508/?hl=en" class="social-media-link"><i
-                                    class="fab fa-instagram"></i></a></li>
-                        <li><a style="margin-left:0;" target="_blank" href="https://mobile.twitter.com/amanmal30160361" class="social-media-link"><i
-                                    class="fab fa-twitter"></i></a></li>
-                        <li><a style="margin-left:0;" target="_blank" class=" social-media-link side-contact-toggle"><i class="far fa-envelope"></i></a>
-                        </li>
-                        <li><a style="margin-left:0;" href="https://github.com/aman-malviya" target="_blank" class="social-media-link"><i class="fab fa-github"></i></a>
-                        </li>   
-                    </ul>
-                </div>
-            </div>
+        <div>
+            <ul style="margin:3% 0 -2%" class="social-media">
+                <li><a style="color:#eee; background-color:#3b5998" target="_blank" class="social-media-link" href="https://www.facebook.com/aman.malviya.9699523"><i
+                            class="fab fa-facebook-f"></i></a></li>
+                <li><a style="color:#eee; background-color:#bc2a8d;" target="_blank" class="social-media-link " href="https://www.instagram.com/amalviya_0508/?hl=en"><i
+                            class="fab fa-instagram"></i></a></li>
+                <li><a style="color:#eee; background-color:#00acee " target="_blank" class="social-media-link" href="https://mobile.twitter.com/amanmal30160361"><i
+                            class="fab fa-twitter"></i></a></li>
+                <li><a style="color:#eee; background-color:#ff9800 " target="_blank" class="social-media-link"><i class="far fa-envelope"></i></a>
+                </li>
+                <li><a style="color:#eee; background-color:#171515" href="https://github.com/aman-malviya" target="_blank" class="social-media-link"><i class="fab fa-github"></i></a>
+                </li>
+            </ul>
             <p class="copy-right"><i class="fad fa-copyright"></i>Copyright 2021 Aman Malviya. All Rights reserved.</p>
             </div>
         </section>
