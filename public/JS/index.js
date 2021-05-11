@@ -40,7 +40,7 @@ $(document).ready(function () {
 
 //--------------------------------
 // function([string1, string2],target id,[color1,color2])    
- consoleText(['Full Stack Web Developer.', 'Programmer.', 'Problem Solver.'], 'text',['tomato','#1a8bdb','tomato']);
+ consoleText(['Full Stack Web Developer.', 'Programmer.', 'Web Designer.'], 'text',['tomato','#1a8bdb','tomato']);
 
 function consoleText(words, id, colors) {
   if (colors === undefined) colors = ['#fff'];

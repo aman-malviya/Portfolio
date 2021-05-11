@@ -1,5 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Karla&display=swap");
 
+a:hover{
+    text-decoration: none !important;
+}
 body{
     background-color:#e0e5ec !important;
 }
