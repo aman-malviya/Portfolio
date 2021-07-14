@@ -80,10 +80,10 @@ function consoleText(words, id, colors) {
   }, 60)
   window.setInterval(function() {
     if (visible === true) {
-      con.className = 'console-underscore hidden'
+      con.style.visibility='hidden';
       visible = false;
     } else {
-      con.className = 'console-underscore'
+      con.style.visibility='visible';
       visible = true;
     }
   }, 400)
