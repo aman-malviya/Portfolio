@@ -1,5 +1,5 @@
 # Hello!
 
-You can find my portfolio at [Aman Malviya](http://aman-malviya.netlify.com/) .
+You can find my portfolio at [Aman Malviya](https://amanmalviya.tech/).
 
 Thanks for visiting!
