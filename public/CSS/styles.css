@@ -484,7 +484,7 @@ body p{
 }
 @media (max-width:500px){
     .property-element-inner div{
-        height: 180px;
+        height: 180px !important;
     }
 }
 .property-element-inner div::-webkit-scrollbar{
