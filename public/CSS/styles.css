@@ -440,7 +440,7 @@ body p{
     width:90%;
 }
 .c{
-    width:75%;
+    width:90%;
 }
 .mern{
     width:80%;
@@ -482,7 +482,11 @@ body p{
     overflow:scroll;
     padding: 5px;
 }
-
+@media (max-width:500px){
+    .property-element-inner div{
+        height: 180px;
+    }
+}
 .property-element-inner div::-webkit-scrollbar{
     display:none;
 }
