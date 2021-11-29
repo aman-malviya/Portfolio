@@ -456,6 +456,50 @@ body p{
     font-family: 'Dosis',sans-serif;
     background-color: #e0e5ec;
 }
+/* Edify video */
+.edify-outer{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    height: 100vh;
+    width: 100vw;
+    background: rgba(17, 17, 59, 0.842);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.edify-outer button{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+.play-edify{
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 20px !important;
+    color: #fff !important;
+    background-color: tomato !important;
+    border-radius: 50% !important;
+    padding: 15px 20px !important;
+}
+.edify-inner{
+    position: relative;
+    width: 90%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e0e5ec;
+    padding: 10px;
+    border-radius: 20px;
+}
+.edify-inner > iframe{
+    aspect-ratio: 16/9;
+    border:2px solid #50ade2;
+    border-radius: 10px;
+}
 #properties h2{
     color: #31344b;
     font-size: 3rem;
@@ -710,3 +754,4 @@ button{
 .console-underscore {
   display:inline-block;
 }
+

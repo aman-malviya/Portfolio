@@ -1,6 +1,16 @@
 $(window).on("load", function () {
     $(".preloader").fadeOut(1000);
     $(".non-preloader-body").fadeIn(1000);
+    document.getElementById("open-video").addEventListener("click", (e)=>{
+        document.getElementsByClassName("edify-outer")[0].classList.remove("d-none")
+    })
+    document.getElementById("video-toggle").addEventListener("click", (e)=>{
+      if(document.getElementsByClassName("edify-outer")[0].classList.contains("d-none")){
+        document.getElementsByClassName("edify-outer")[0].classList.remove("d-none")
+      }else{
+        document.getElementsByClassName("edify-outer")[0].classList.add("d-none")
+      }
+    })
 });
 $(document).ready(function () {    
     // Scrolling-buttons
@@ -88,3 +98,4 @@ function consoleText(words, id, colors) {
     }
   }, 400)
 }
+
