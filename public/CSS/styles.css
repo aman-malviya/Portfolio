@@ -318,6 +318,7 @@ body p{
     padding: 5% 7% !important;
     letter-spacing: 0.1rem;
     line-height: 1.4;
+    text-align: justify;
 }
 .about-me-text p{
     clear:left;
@@ -354,7 +355,8 @@ body p{
         text-align:center;
     }
     .about-me-text p{
-        text-align:center;
+        text-align:justify;
+        text-align-last: center;
     }
     .about-button{
         margin:auto;
