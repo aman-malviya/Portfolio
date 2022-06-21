@@ -21,7 +21,7 @@ $(document).ready(function () {
     });
     $(".home-scroll").on("click", function () {
         $('html, body').animate({
-            scrollTop: ($('#title').offset().top)
+            scrollTop: ($('#top').offset().top)
         }, 1000);
     });
     $(".portfolio-scroll").on("click", function () {
@@ -38,12 +38,6 @@ $(document).ready(function () {
         $('html, body').animate({
             scrollTop: ($('#best-clicks').offset().top)
         }, 1000);
-    });
-});
-// Hover-css
-$(document).ready(function () {
-    $(".nav-link").on("mouseover", function () {
-        $(".nav-link").addClass("hvr-underline-from-left");
     });
 });
 
