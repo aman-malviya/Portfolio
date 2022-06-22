@@ -739,9 +739,6 @@ svg circle {
         font-size: 1rem;
         line-height: 1.5;
     }
-    .social-media{
-        margin-bottom:40px;
-    }
     .introduction-div button{
         margin-top:40px;
     }
@@ -831,4 +828,7 @@ button{
 }
 .console-underscore {
   display:inline-block;
+}
+.iconify{
+    height: 16px;
 }
