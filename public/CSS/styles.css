@@ -13,34 +13,91 @@ body p{
 /* preloader */
 .preloader{
     height: 100vh;
-    width: 100vw;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     font-family: 'Dosis', sans-serif;
     font-size: 1.2rem;
     background-color: #e0e5ec;
+    position: absolute;
 }
 .preloader-inner{
-    display:grid;
-    grid-template-columns:1fr 3fr;
-    width:150px;
-    height:100px;
-	border-radius:10px;
-    background-color:#e0e5ec;
-    box-shadow: inset 4px 4px 8px #a3b1c6, inset -0.25em -0.25em 0.5em  #fff;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.loading{
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    font-size:1.1rem;
-    padding-left:6px;
+.preloader-inner > div, .preloader-inner > img{
+    position: absolute;
 }
-.loading p{
-    margin:auto;
+.loader {
+    --path: #0e0e0e;
+    --dot: #ff6347;
+    --duration: 4s;
+    width: 176px;
+    height: 176px;
+    position: relative;
+}
+svg {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+svg circle {
+    fill: none;
+    stroke: var(--path);
+    stroke-width: 15px;
+    stroke-linejoin: round;
+    stroke-linecap: round;
+    stroke-dasharray: calc(800 / 4 * 3) calc(800 / 4) calc(800 / 4 * 3) calc(800 / 4);
+    stroke-dashoffset: 300;
+    animation: pathCircle var(--duration) cubic-bezier(0.785, 0.135, 0.15, 0.86) infinite;
+    filter: drop-shadow(4px 4px 8px #a3b1c6);
+}
+.loader::before{
+    content: '';
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    position: absolute;
+    display: block;
+    background: var(--dot);
+    top: 150px;
+    left: 75px;
+    transform: translate(-72px, -72px);
+    animation: dotRect var(--duration) cubic-bezier(0.785, 0.135, 0.15, 0.86) infinite;
+    box-shadow: 4px 4px 8px #a3b1c6;
+}
+@keyframes dotRect {
+    25% {
+        transform: translate(0, 0);
+    }
+    50% {
+        transform: translate(72px, -72px);
+    }
+    75% {
+        transform: translate(0, -144px);
+    }
+    100% {
+        transform: translate(-72px, -72px);
+    }
 }
 
+@keyframes pathCircle {
+    25% {
+        stroke-dashoffset: 500;
+    }
+    50% {
+        stroke-dashoffset: 700;
+    }
+    75% {
+        stroke-dashoffset: 900;
+    }
+    100% {
+        stroke-dashoffset: 1100;
+    }
+}
 
 /* non-preloader-body */
 .non-preloader-body{
