@@ -224,7 +224,7 @@ svg circle {
     border: 1px solid #ff6347;
     box-shadow: 0 0 40px 2px #ff634778;
 }
-.appreciation-div, .appreciation-div-2{
+/* .appreciation-div, .appreciation-div-2{
     color: #e0e5ec;
     text-align: center;
     padding: 3% 10%;
@@ -257,7 +257,7 @@ svg circle {
 .appreciation-div-2 h5{
      letter-spacing: 0.1rem;
      margin-bottom: 2.7%;
-}
+} */
 #down{
     visibility:hidden;
     position:absolute;
@@ -719,7 +719,7 @@ svg circle {
     .portfolio-line{
         width: 20%;
         border: 0;
-        border-top:5px dotted #a79f76;
+        border-top:5px dotted #33413b;
     }
     .skill{
         padding:4% 6%;
