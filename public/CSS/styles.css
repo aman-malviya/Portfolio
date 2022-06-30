@@ -427,7 +427,6 @@ svg circle {
 }
 /* Portfolio section */
 #portfolio{
-    background:url(../Assets/3.png);
     background-size:cover;
     background-attachment:center;
     padding:0 8%;
@@ -452,10 +451,6 @@ svg circle {
     height: 600px;
     border-radius: 10px;
 } 
-.portfolio{
-    letter-spacing: 0.1rem;
-    line-height: 1.5;
-}
 .portfolio-heading{
     padding: 5% ;
     text-align: center;
@@ -465,66 +460,29 @@ svg circle {
     border:0;
     border-top: 5px dotted #31344b;
 }
-.skill{
-   background-color: #e0e5ec;
-   letter-spacing: 0.1rem;
-   padding: 2% 4%;
-   border-radius: 10px; 
-   position:relative;
-}
-.skill::before {
-  content: '';
-  width: 120px;
-  height: 50px;
-  border-left: 1px solid tomato;
-  border-top: 1px solid tomato;
-  border-radius:10px 0 0 0;
-  background:none;
-  position:absolute;
-  top:0;
-  left:0;
-}
-.skill::after {
-  content: '';
-  width: 120px;
-  height: 50px;
-  border-right: 1px solid tomato;
-  border-bottom: 1px solid tomato;
-  border-radius:0 0 10px 0;
-  background:none;
-  position:absolute;
-  bottom:0;
-  right:0;
-}
-.bar{
-    margin-top:15px;
-    height:8px;
-    border-radius:4px;
-    box-shadow: inset 4px 4px 8px #a3b1c6, inset -0.25em -0.25em 0.5em  #fff;
+.skillset .skill > div{
+    padding: 20px;
+    background-color: #0d0d0d;
+    border-radius: 10px;
     box-shadow: 4px 4px 8px #a3b1c6, -0.25em -0.25em 0.5em  #fff ;
+    color: #e0e5ec;
+    height: 220px;
 }
-.upto{
-    background-color:#1a8bdb;
-    height:100%;
-    border-radius:4px;
-    background: linear-gradient(145deg, #5bc6ff, #4da7db);
+.skillset .skill > div > i{
+    height: 48px;
+    width: 48px;
 }
-.js{
-    width:90%;
+.skillset .skill:nth-child(even) > div{
+    background-color: tomato;
+    color: #0d0d0d;
 }
-.html{
-    width:90%;
+.skillset .skill:nth-child(even) > div > p{
+    color: #0d0d0d;
 }
-.c{
-    width:90%;
+.skillset .skill>div>p{
+    color: #a3b1c6;
+    font-size: 0.8rem;
 }
-.mern{
-    width:80%;
-}
-.bootstrap{
-    width:90%;
-}
-
 /* Properties */
 #properties{
     text-align: center;
