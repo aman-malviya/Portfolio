@@ -44,7 +44,7 @@ $(document).ready(function () {
 
 //--------------------------------
 // function([string1, string2],target id,[color1,color2])    
- consoleText(['Technophile.','Developer.','Programmer.'], 'text',['tomato','#1a8bdb','tomato']);
+ consoleText(['Technophile.','Software Engineer.','Programmer.'], 'text',['tomato','#1a8bdb','tomato']);
 
 function consoleText(words, id, colors) {
   if (colors === undefined) colors = ['#fff'];
